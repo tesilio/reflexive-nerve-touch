@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Reflexive nerve touch</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Chat Test Page</title>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+  <!-- 부가적인 테마 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <style>
+    #section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    #wrap {
+      display: inline-flex;
+      flex-wrap: wrap;
+    }
+    .features {
+      line-height: 2em;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      /*max-width: 50%;*/
+    }
+    .border {
+      border: 1px solid #555555;
+    }
+  </style>
+</head>
+<script src="./main.js" defer></script>
+<body>
+<header id="header" class="container-fluid box-shadow">
+
+</header>
+<section id="section" class="container-fluid">
+  <div id="wrap">
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+    <div class="features border"></div>
+  </div>
+</section>
+
+<!--<footer id="footer" class="container-fluid box-shadow">-->
+<!--  <form id="footer-form">-->
+<!--    <input id="chat" type="textarea" name="chat" autocomplete="off">-->
+<!--    <input id="submit" type="submit" name="submit" value="▲">-->
+<!--  </form>-->
+<!--</footer>-->
+<script>
+  window.onload = function () {
+    const wrap = document.getElementById('wrap');
+    const root = Math.sqrt(wrap.childElementCount);
+    const childWidth = wrap.children[0].clientWidth + 2;
+    console.log(root, childWidth);
+    wrap.style.width = `${Number(root) * Number(childWidth)}px`;
+  }
+</script>
+</body>
+</html>
